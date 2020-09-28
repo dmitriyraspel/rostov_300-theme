@@ -2015,6 +2015,7 @@ ul.social-links-menu li a svg {
 }
 
 .site-main__home .post-wrapper-content {
+  max-width: 100%;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -2038,9 +2039,12 @@ ul.social-links-menu li a svg {
   max-width: 550px;
 }
 
-.entry-meta span {
+.entry-meta span,
+.entry-footer span,
+.entry_header span {
   margin-right: 1rem;
-  display: inline-block;
+  margin-top: 1rem;
+  display: inline;
   position: relative;
 }
 
@@ -2049,7 +2053,7 @@ ul.social-links-menu li a svg {
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.5em;
-  max-width: 24px;
+  max-width: 16px;
 }
 
 span.sep {
@@ -2060,27 +2064,6 @@ span.sep {
 a.post-edit-link {
   color: red;
   border-bottom: dotted 1px red;
-}
-
-.entry-footer__home span,
-.entry-footer span,
-.entry_header span,
-.entry-header__home span {
-  margin-right: 1em;
-  font-size: 13px;
-}
-
-.entry-footer__home span.sep,
-.entry-footer span.sep,
-.entry_header span.sep,
-.entry-header__home span.sep {
-  margin-left: 0;
-}
-
-.cat-links,
-.cat-links a {
-  color: #EC008C;
-  text-transform: uppercase;
 }
 
 .tags-links a {
