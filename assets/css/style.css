@@ -2077,9 +2077,10 @@ a.post-edit-link {
   margin-left: 0;
 }
 
-
-.entry-meta span {
-  display: inline;
+.cat-links,
+.cat-links a {
+  color: #EC008C;
+  text-transform: uppercase;
 }
 
 .tags-links a {
