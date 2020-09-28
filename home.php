@@ -46,7 +46,7 @@ get_header();
 							<p><?php the_excerpt() ?></p>
 						</div><!-- /.post-text -->
 
-						<footer class="entry-footer__home">
+						<footer class="entry-footer entry-footer__home">
 							<?php rostov_entry_footer(); ?>
 						</footer><!-- .entry-footer -->
 

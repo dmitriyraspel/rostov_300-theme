@@ -162,7 +162,8 @@ add_action( 'widgets_init', 'raspel_sidebar_registration' );
 function raspel_scripts() {
 	// wp_enqueue_style( 'raspel-style', get_stylesheet_uri(), array(), _S_VERSION );
 
-	wp_enqueue_style('raspel-style_temp', get_stylesheet_directory_uri() . '/assets/css/style_28.css', false, _S_VERSION  ); // переделать путь к шрифтам
+	// Main style temp
+	wp_enqueue_style( 'raspellab-style-temp', get_template_directory_uri() . '/assets/css/style_28.css', array(), filemtime(get_template_directory() . '/assets/css/style_28.css') );
 
 	wp_enqueue_script( 'raspel-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true );
 
