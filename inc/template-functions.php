@@ -61,7 +61,8 @@ add_filter( 'comment_form_default_fields', 'raspel_remove_url_field', 10, 1);
 /**
  * Change the excerpt more string
  */
-function raspel_excerpt_more( $more ) {
-	return '&hellip;';
+add_filter( 'excerpt_more', 'rostov_excerpt_more' );
+function rostov_excerpt_more( $more ){
+	global $post;
+	return '<a class="more-link" href="'. get_permalink($post) . '"> Подробнее...</a>';
 }
-add_filter( 'excerpt_more', 'raspel_excerpt_more' );

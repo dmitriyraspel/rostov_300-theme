@@ -2074,6 +2074,14 @@ a.post-edit-link {
   margin-right: 0.5em;
 }
 
+a.more-link {
+  color: #00ADEF;
+}
+a.more-link:hover,
+a.more-link:focus {
+  color: #6C63FF;
+}
+
 .comments-link a {
   color: #666;
 }
