@@ -79,8 +79,12 @@ if ( ! function_exists( 'rostov_entry_meta_top' ) ) :
 			// Posted on.
 			rostov_posted_on();
 
-			// Posted in
-			rostov_posted_cat();
+			if (is_category()) {
+				return;
+			} else {
+				// Posted in
+				rostov_posted_cat();
+			}
 
 		}
 	}
